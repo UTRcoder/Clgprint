@@ -34,8 +34,12 @@ const onChange=(event)=>{
 
 return (
     <>
-        <div className="container">
-            <form onSubmit={handleSubmit}>
+     <div style={{backgroundImage: 'url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', height: '100vh', backgroundSize: 'cover' }}>
+      <div>
+        <Navbar />
+      </div>
+      <div className='container'>
+        <form className='w-50 m-auto mt-5 p-3 border bg-dark border-success rounded' onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
                     <input type="text" className="form-control" name='name' value={credentials.name} onChange={onChange}/>
