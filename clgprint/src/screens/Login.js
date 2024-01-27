@@ -33,9 +33,13 @@ export default function Login() {
 
     return (
         <>
-            <div className="container">
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
+            <div style={{backgroundImage: 'url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', height: '100vh', backgroundSize: 'cover' }}>
+      <div>
+        <Navbar />
+      </div>
+      <div className='container'>
+        <form className='w-50 m-auto mt-5 p-3 border bg-dark border-success rounded' onSubmit={handleSubmit}>
+          <div className="m-3">
                         <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                         <input type="email" className="form-control" name='email' value={credentials.email} onChange={onChange} />
                         <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
