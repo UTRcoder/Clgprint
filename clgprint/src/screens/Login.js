@@ -52,6 +52,7 @@ export default function Login() {
                     <Link to="/creatuser" className='m-3 btn btn-danger'>New User</Link>
                 </form>
             </div>
+    </div>
         </>
     )
 }
