@@ -66,6 +66,7 @@ return (
                 <Link to="/login" className='m-3 btn btn-danger'>Already a User</Link>
             </form>
         </div>
+    </div>
     </>
 )
 }
