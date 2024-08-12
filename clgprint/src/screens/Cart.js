@@ -1,21 +1,27 @@
 import React from 'react'
 import { useCart, useDispatchCart } from '../Components/ContextReducer'
-import trash from "../trash.svg"
+import trash from "../trash.svg";
 
 export default function Cart() {
 
     let data = useCart();
     let dispatch = useDispatchCart();
+    let userName = localStorage.getItem("userName")
     let userEmail = localStorage.getItem("userEmail");
     if (data.length === 0) {
         return (
             <div>
-                <div className='text-center text-white'>Hello user {userEmail}</div>
+                <div className='text-center text-white'>Hello!! {userName}</div>
                 <div className='m-5 w-100 text-center text-white fs-3'>The Cart is Empty!</div>
             </div>
         )
-
     }
+
+    const randomNumberInRange = (min, max) => {
+        return Math.floor(Math.random()
+            * (max - min + 1)) + min;
+    };
+
     let totalPrice = data.reduce((total, food) => total + food.price, 0)
     var link = "upi://pay?pa=utkarshrai146@oksbi%26am=" + totalPrice + "%26cu=INR%26aid=uGICAgICXtpSdRw";
     var upi = "https://qrcode.tec-it.com/API/QRCode?data=" + link;
@@ -84,3 +90,4 @@ export default function Cart() {
             </div>
         </div>
     )
+}
