@@ -80,7 +80,7 @@ export default function Cart() {
                         <img className={upi} src={upi} style={{height:"80px"}}/>
                         <form style={{ display: " flex", justifyContent: "center", alignItems: " center", paddingTop: "20px" }}>
                             <label htmlFor="exampleInputtext" className="form-label">Enter UTR/Ref_no here:</label>
-                            <input type="text" className="form-control" name='utr' style={{ width: "50px" }} />
+                            <input type="text" className="form-control" name='utr' style={{ width: "200px" }} />
                         </form>
                     </div>
                     <div>
