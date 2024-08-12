@@ -10,8 +10,8 @@ export default function Cart() {
     if (data.length === 0) {
         return (
             <div>
-                <div className='text-center'>Hello user {userEmail}</div>
-                <div className='m-5 w-100 text-center fs-3'>The Cart is Empty!</div>
+                <div className='text-center text-white'>Hello user {userEmail}</div>
+                <div className='m-5 w-100 text-center text-white fs-3'>The Cart is Empty!</div>
             </div>
         )
 
