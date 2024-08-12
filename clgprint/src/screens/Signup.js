@@ -42,26 +42,26 @@ return (
       <div className='container'>
         <form className='w-50 m-auto mt-5 p-3 border bg-dark border-success rounded' onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="name" className="form-label">Name</label>
+                    <label htmlFor="name" className="form-label text-white">Name</label>
                     <input type="text" className="form-control" name='name' value={credentials.name} onChange={onChange}/>
                     <div id="emailHelp" className="form-text"></div>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label text-white">Email address</label>
                     <input type="email" className="form-control" name='email' value={credentials.email} onChange={onChange}/>
                     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label text-white">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1"name='password' value={credentials.password} onChange={onChange}  />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Address</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label text-white">Address</label>
                     <input type="text" className="form-control" id="exampleInp" name='geolocation' value={credentials.geolocation} onChange={onChange}  />
                 </div>
                 <div className="mb-3 form-check">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                    <label className="form-check-label" htmlFor="exampleCheck1">Agree Terms and Conditions</label>
+                    <label className="form-check-label text-white" htmlFor="exampleCheck1">Agree Terms and Conditions</label>
                 </div>
                 <button type="submit" className="btn btn-success">Submit</button>
                 <Link to="/login" className='m-3 btn btn-danger'>Already a User</Link>
